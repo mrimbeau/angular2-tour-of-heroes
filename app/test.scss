@@ -1,0 +1,21 @@
+.link {
+  $items: error, success, info, organic;
+
+  @each $item in $items {
+    &.var_#{item} {
+      @if $item  == error {
+        color: firebrick;
+      }
+      @if $item  == success {
+        color: olivedrab;
+      }
+      @if $item  == info {
+        color: lightblue;
+      }
+      @if $item  == organic {
+        color: red;
+      }
+    }
+  }
+
+}
